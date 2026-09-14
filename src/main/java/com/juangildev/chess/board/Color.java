@@ -1,12 +1,10 @@
 package com.juangildev.chess.board;
 
-public class Color {
-
-    public enum PieceColor {
+public enum Color {
         WHITE,
         BLACK;
 
-        public PieceColor opposite() {
+        public Color opposite() {
             if (this == WHITE) {
                 return BLACK;
             } else {
@@ -14,4 +12,4 @@ public class Color {
             }
         }
     }
-}
+
